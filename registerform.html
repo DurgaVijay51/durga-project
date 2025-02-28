@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="reg.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <form id="form">
+            <h1>Form validation</h1>
+            <div class="container-fluid">
+                <!-- <img src="https://static.vecteezy.com/system/resources/previews/022/257/312/non_2x/rose-flower-pictures-beautiful-roses-love-rose-flower-beautiful-flowers-wallpapers-ai-generated-free-photo.jpgalt="soft"> -->
+                <div class="part1">
+                    <div class="input-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" formControl="name">
+                        <div class="error"></div>
+                    </div><br>
+
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" formControl="email">
+                        <div class="error"></div>
+                    </div><br>
+                </div>
+
+                <div class="part2">
+                    <div class="input-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender">
+                            <option value="" disabled selected></option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div><br>
+
+                    <div class="input-group">
+                        <label class="password">Password</label>
+                        <input type="password" id="password" name="password"  class="password">
+                        <div class="error"  class="password"></div>
+                    </div>
+                </div>
+
+                <div class="part3">
+                    <div class="input-group">
+                        <label class="cpassword">Confirm Password</label>
+                        <input type="password" id="cpassword" name="cpassword">
+                        <div class="error"></div>
+                    </div><br>
+
+                    <div class="phone">
+                        <label class="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                        <div class="error"></div>
+                    </div><br>
+                </div>
+
+                <div>
+                    <button type="submit">Register</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
